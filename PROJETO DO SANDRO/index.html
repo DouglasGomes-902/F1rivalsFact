@@ -9,6 +9,7 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="CSS/style.css">
 
+      <!--Style interno-->
   <style>
     * {
       margin: 0;
@@ -20,7 +21,6 @@
     .banner {
       width: 100%;
       height: auto;
-      background-image: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40));
       background-position: center;
       background-size: center;
       position: relative;
@@ -35,15 +35,6 @@
       justify-content: space-between;
     }
 
-    .content {
-      width: 100%;
-      position: absolute;
-      color: white;
-      top: 45%;
-      transform: translateY(-50%);
-      text-align: center;
-    }
-
     .banner video {
       position: absolute;
       top: 0;
@@ -51,7 +42,16 @@
       width: 100%;
       height: auto;
       z-index: -1;
-      
+    }
+    .capa {
+      position: absolute;
+      top: 0%;
+      left: 15%;
+      z-index: -1;
+    }
+
+    .content {
+      margin-top: 60%;
     }
 
     @media(min-aspect-ratio: 16/9) {
@@ -63,54 +63,54 @@
   </style>
 
 </head>
-
-
     <!--banner de fundo do site-->
-      <div class="banner">
-            <video autoplay loop muted plays-inline>
-              <source src="medias/videos/Five Epic Lewis Hamilton vs. Max Verstappen Duels.mp4" type="video/mp4">
-        </video>
-      <!--Navbar-->
-    <nav class="navbar">
-      <div class="container-fluid">
-        <a class="navbar-brand" style="color: white;" href="index.html">Home</a> <!--Aqui a logo F1-->
-        <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon "></span>
-        </button>
-          <!--Link de cafa pag-->
-        <div class="collapse navbar-collapse" id="navbarNav" >
-          <ul class="navbar-nav ms-auto text-white">
-            <li class="nav-item px-3">
-              <a class="nav-link active " aria-current="page" style="color: white;" href="hamVertta.html">Hamilton VS Versttapen</a>
-            </li>
-            <li class="nav-item px-3">
-              <a class="nav-link" style="color: white;"  href="#">Features</a>
-            </li>
-            <li class="nav-item px-3">
-              <a class="nav-link" style="color: white;"  href="#">Pricing</a>
-            </li>
-            
-          </ul>
+      <header>
+        <div class="banner">
+               <video autoplay loop muted plays-inline>
+                      <source src="medias/videos/Clip-Montage.mp4" type="video/mp4">
+               </video>
+
+        <!-- logo da f1-->
+          <div class="capa" >
+            <div class="container-fluid">
+               <div class="col-md-12 ">
+                     <img src="medias/videos/logo--2.png" class="img-fluid" alt="" width="1000" height="1000">
+                 </div>
+             </div>
         </div>
-      </div>
-    </nav>
-  </div>
 
-  <!--Tentando por a logo da f1-->
-
-  <div class="capa" >
-          <div class=" col-md-4">
-             <img src="medias/videos/logo--2.png" class="img-fluid" alt="" width="500" height="500">
+        <!--Navbar-->
+            <nav class="navbar" >
+        <div class="container-fluid">
+             <a class="navbar-brand" style="color: white;" href="index.html">Home</a> <!--Aqui a logo F1.icon-->
+                  <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon "></span>
+                  </button>
+               <!--Link de cada pag-->
+          <div class="collapse navbar-collapse" id="navbarNav" >
+               <ul class="navbar-nav ms-auto text-white">
+                    <li class="nav-item px-3">
+                      <a class="nav-link active " aria-current="page" style="color: white;" href="hamVertta.html">Hamilton VS Versttapen</a>
+                    </li>
+                    <li class="nav-item px-3">
+                      <a class="nav-link" style="color: white;"  href="#">Features</a>
+                    </li>
+                    <li class="nav-item px-3">
+                      <a class="nav-link" style="color: white;"  href="#">Pricing</a>
+                    </li>
+        
+            </ul>
           </div>
-      </div>
+        </div>
+      </nav>
+  </div>
+</header>
+       <!--Content-->
+       <section class="">
+        
 
-      
-
-
-
-
-
+      </section>
 
   
 
