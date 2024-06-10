@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+main {
+    width: 100%;
+}
+
+header {
+    background-color: none;
+    padding: 1em;
+    color: whitesmoke;
+}
+
+section {
+    padding: 1em;
+    color: coral;
+}
+.navbar {
+  width: 90%;
+  padding: 30px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.capa {
+  position: absolute;
+  top: 0%;
+  left: 15%;
+  z-index: -1;
+}
+.f1_video{ 
+    position: absolute;
+    right: 0;
+    top: 0;
+    min-width: 100%;
+    min-height: auto;
+    width: 100%;
+    height: auto;
+    z-index: -100;
+}
+.content {
+  margin-top: 60%;
+}
+
+#hamVesta{
+    width: 100vw;
+    height: 100vh;
+    background: url(medias/Hamilton/carrosdeles.jpg);
+    background-size: cover;
+    top: 0%;
+    z-index: -100;
+}
+footer {
+    padding: 1em;
+    text-align: center;
+    background-color: blueviolet;
+    color: whitesmoke;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin-top: 100%;
+}
+
+@media(min-aspect-ratio: 16/9) {
+  .banner video {
+    width: 100%;
+    height: auto;
+  }
+}
+
